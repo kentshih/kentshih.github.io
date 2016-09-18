@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo Build | Baby Steps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="I will post what I learned in my blog.This article indicated how to build Hexo in Github.
+IntroThere are lots of system to create a website. I choose Hexo because it was created by Taiwanese.Rather th">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo Build">
+<meta property="og:url" content="http://kentshih.github.io/2016/09/18/test/index.html">
+<meta property="og:site_name" content="Baby Steps">
+<meta property="og:description" content="I will post what I learned in my blog.This article indicated how to build Hexo in Github.
+IntroThere are lots of system to create a website. I choose Hexo because it was created by Taiwanese.Rather th">
+<meta property="og:updated_time" content="2016-09-18T23:10:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo Build">
+<meta name="twitter:description" content="I will post what I learned in my blog.This article indicated how to build Hexo in Github.
+IntroThere are lots of system to create a website. I choose Hexo because it was created by Taiwanese.Rather th">
+  
+    <link rel="alternate" href="/atom.xml" title="Baby Steps" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Baby Steps</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">to giant strides</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://kentshih.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/09/18/test/" class="article-date">
+  <time datetime="2016-09-18T21:21:28.000Z" itemprop="datePublished">2016-09-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo Build
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I will post what I learned in my blog.<br>This article indicated how to build Hexo in Github.</p>
+<p>Intro<br>There are lots of system to create a website. I choose Hexo because it was created by Taiwanese.<br>Rather than Jekyll which created by Ruby, Hexo was developed by Node.js and it seems faster than Jekyll.</p>
+<p>Requirement<br>You should install Git and Node.js at first.</p>
+<p>Node.js: <a href="http://nodejs.org/" target="_blank" rel="external">http://nodejs.org/</a> </p>
+<p>Step</p>
+<ol>
+<li><p>install Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
+</li>
+<li><p>create directory</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+</li>
+<li><p>install hexo package</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-index --save</div><div class="line">npm install hexo-generator-archive --save</div><div class="line">npm install hexo-generator-category --save</div><div class="line">npm install hexo-generator-tag --save</div><div class="line">npm install hexo-server --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">npm install hexo-deployer-heroku --save</div><div class="line">npm install hexo-deployer-rsync --save</div><div class="line">npm install hexo-deployer-openshift --save</div><div class="line">npm install hexo-renderer-ejs --save</div><div class="line">npm install hexo-renderer-marked@0.2 --save</div><div class="line">npm install hexo-renderer-stylus@0.2 --save</div><div class="line">npm install hexo-generator-feed@1 --save</div><div class="line">npm install hexo-generator-sitemap@1 --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>Set Github account</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.email <span class="string">"EMAIL"</span></div><div class="line">git config --global user.name <span class="string">"NAME"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Create SSH key to deploy</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"EMAIL"</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;輸入密碼&gt;</div><div class="line">Enter same passphrase again:&lt;再次輸入密碼&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Set SSH key on Github<br>Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys</p>
+</li>
+<li><p>Open _config.yml</p>
+</li>
+</ol>
+<h1 id="Site"><a href="#Site" class="headerlink" title="Site"></a>Site</h1><p>title: /標題(會顯示在網頁標題與頁首)/<br>subtitle: /子標題(顯示在頁首)/<br>description: /內容描述(給搜尋引擎看的)/<br>author: /作者(顯示在頁尾)/<br>language: /網站預設語言(台灣:zh-tw)/<br>timezone: /時區(預設使用你電腦的時區)/</p>
+<h1 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h1><p>url: /網站的網域位址/<br>root: /網站根目錄/<br>permalink: /文章目錄(預設使用 YYYY\MM\DD\文章名稱)/</p>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><p>theme: /網站的佈景主題/<br>       (可以到”<a href="https://hexo.io/themes/&quot;下載喜歡的佈景放置到" target="_blank" rel="external">https://hexo.io/themes/&quot;下載喜歡的佈景放置到</a> theme 目錄裡)</p>
+<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><p>deploy:<br>    type: /發佈型態/ 例如(git、heroku、rsync、openshift、ftpsync)<br>    repository: /部署位置/ 例如(git@github.com:帳號/REPO名.git)<br>    branch: /分支/ 例如(master、gh-pages)<br>    message: /部署訊息/</p>
+<ol>
+<li>Deployment<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g  <span class="comment"># 產生 blog</span></div><div class="line">hexo s  <span class="comment"># 讓 blog 可以在 local 端檢視</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Reference<br>Thanks for everyone who teaches Hexo and help me to build this blog.<br><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">https://xuanwo.org/2015/03/26/hexo-intor/</a><br><a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/" target="_blank" rel="external">https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/</a><br><a href="http://tiktoking.github.io/2016/01/26/hexo/" target="_blank" rel="external">http://tiktoking.github.io/2016/01/26/hexo/</a><br><a href="http://a0tim.github.io/2015/10/hexo-1/" target="_blank" rel="external">http://a0tim.github.io/2015/10/hexo-1/</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://kentshih.github.io/2016/09/18/test/" data-id="cit98m0c8000082fb0yjsr9os" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/09/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/09/18/test/">Hexo Build</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Kent Shih<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
