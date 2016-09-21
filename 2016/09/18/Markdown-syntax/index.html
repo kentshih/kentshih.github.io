@@ -23,7 +23,8 @@ pound sign (#) means title (ATX style)
 
 one titletwo title
 star sign, plus sign,">
-<meta property="og:updated_time" content="2016-09-20T05:58:05.000Z">
+<meta property="og:image" content="http://kentshih.github.io/path/to/img.jpg">
+<meta property="og:updated_time" content="2016-09-20T20:22:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown-syntax">
 <meta name="twitter:description" content="To write passage in Hexo, it&amp;#39;s necessary to familar with markdown syntax.
@@ -33,6 +34,7 @@ pound sign (#) means title (ATX style)
 
 one titletwo title
 star sign, plus sign,">
+<meta name="twitter:image" content="http://kentshih.github.io/path/to/img.jpg">
     
 
     
@@ -107,7 +109,7 @@ ga('send', 'pageview');
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -126,10 +128,10 @@ ga('send', 'pageview');
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'pos',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'kategori',
+            TAGS: 'tag',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -160,7 +162,7 @@ ga('send', 'pageview');
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
     </div>
 
                 </td>
@@ -180,12 +182,12 @@ ga('send', 'pageview');
             <h2 id="name">Kent Shih</h2>
             <h3 id="title">Software Enginner</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Corvallis, OR</span>
-            <a id="follow" target="_blank" href="https://github.com/kentshih">FOLLOW</a>
+            <a id="follow" target="_blank" href="https://github.com/kentshih">IKUTI</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
                 3
-                <span>posts</span>
+                <span>pos</span>
             </div>
             <div class="article-info-block">
                 1
@@ -296,6 +298,43 @@ I will try what I learned in this post.</p>
 <blockquote>
 <p>hihihi</p>
 </blockquote>
+<ol>
+<li><p>code block (tab or four blank)
+Test
+ It&#39;s code.
+ hi</p>
+</li>
+<li><p>Seperate line</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+</li>
+<li><p>Link
+ <a href="www.link.com">Link</a>
+or</p>
+</li>
+</ol>
+<pre><code>[foo]: http://example.com/  &quot;Optional Title Here&quot;
+</code></pre><ol>
+<li><p>Emphasis
+ <em>single asterisks</em></p>
+<p> <em>single underscores</em></p>
+</li>
+<li><p>Code
+ <code>printf()</code></p>
+</li>
+<li><p>Picture
+<img src="/path/to/img.jpg" alt="Alt text" title="Optional title"></p>
+</li>
+<li><p>automatic link
+<a href="http://example.com/" target="_blank" rel="external">http://example.com/</a></p>
+</li>
+<li><p>jump character
+\back slash\</p>
+</li>
+</ol>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://markdown.tw/" target="_blank" rel="external">http://markdown.tw/</a></p>
 
         
@@ -307,7 +346,7 @@ I will try what I learned in this post.</p>
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/" data-id="citb2m5lf0000w8fb2x9ni9mr" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/" data-id="citcf8nk300012zfbg0xoadtk" class="article-share-link"><i class="fa fa-share"></i>Bagikan</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -375,7 +414,7 @@ I will try what I learned in this post.</p>
 
             
     
-        <a href="http://kentshih.github.io/2016/09/18/Markdown-syntax/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/">Comments</a>
+        <a href="http://kentshih.github.io/2016/09/18/Markdown-syntax/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/">Komentar</a>
     
 
         </footer>
@@ -386,7 +425,7 @@ I will try what I learned in this post.</p>
     
     
         <a href="/2016/09/18/test/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Older</strong>
+            <strong class="article-nav-caption">Lebih Tua</strong>
             <div class="article-nav-title">Hexo Build</div>
         </a>
     
@@ -414,7 +453,7 @@ I will try what I learned in this post.</p>
    
         
     <div class="widget-wrap">
-        <h3 class="widget-title">recent</h3>
+        <h3 class="widget-title">terbaru</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
@@ -484,7 +523,7 @@ I will try what I learned in this post.</p>
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">arsip</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
@@ -493,7 +532,7 @@ I will try what I learned in this post.</p>
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">tags</h3>
+        <h3 class="widget-title">tag</h3>
         <div class="widget">
             <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li></ul>
         </div>
@@ -502,7 +541,7 @@ I will try what I learned in this post.</p>
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">awan tag</h3>
         <div class="widget tagcloud">
             <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a>
         </div>
@@ -511,7 +550,7 @@ I will try what I learned in this post.</p>
     
         
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title">tautan</h3>
         <div class="widget">
             <ul>
                 
