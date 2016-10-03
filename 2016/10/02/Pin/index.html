@@ -3,27 +3,20 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Hexo Build | Baby Steps</title>
+    <title>Pin | Baby Steps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="I will post what I learned in my blog.
-This article indicated how to build Hexo in Github.
-IntroThere are lots of system to create a website. I choose Hexo because it was created by Taiwanese.
-Rather">
+    <meta name="description" content="Pin post test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Build">
-<meta property="og:url" content="http://kentshih.github.io/2016/09/18/test/index.html">
+<meta property="og:title" content="Pin">
+<meta property="og:url" content="http://kentshih.github.io/2016/10/02/Pin/index.html">
 <meta property="og:site_name" content="Baby Steps">
-<meta property="og:description" content="I will post what I learned in my blog.
-This article indicated how to build Hexo in Github.
-IntroThere are lots of system to create a website. I choose Hexo because it was created by Taiwanese.
-Rather">
-<meta property="og:updated_time" content="2016-09-19T03:48:54.000Z">
+<meta property="og:description" content="Pin post test">
+<meta property="og:image" content="https://deresute.me/601304466/large">
+<meta property="og:updated_time" content="2016-10-03T02:59:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo Build">
-<meta name="twitter:description" content="I will post what I learned in my blog.
-This article indicated how to build Hexo in Github.
-IntroThere are lots of system to create a website. I choose Hexo because it was created by Taiwanese.
-Rather">
+<meta name="twitter:title" content="Pin">
+<meta name="twitter:description" content="Pin post test">
+<meta name="twitter:image" content="https://deresute.me/601304466/large">
     
 
     
@@ -227,7 +220,7 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Pin" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -235,7 +228,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-            Hexo Build
+            Pin
         </h1>
     
 
@@ -244,8 +237,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/18/test/">
-            <time datetime="2016-09-18T21:21:28.000Z" itemprop="datePublished">2016-09-18</time>
+        <a href="/2016/10/02/Pin/">
+            <time datetime="2016-10-03T02:52:45.000Z" itemprop="datePublished">2016-10-02</time>
         </a>
     </div>
 
@@ -254,7 +247,7 @@ ga('send', 'pageview');
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Hexo/">Hexo</a>
+        <a class="tag-link" href="/tags/game/">game</a>
     </div>
 
                     </div>
@@ -265,48 +258,7 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>I will post what I learned in my blog.
-This article indicated how to build Hexo in Github.</p>
-<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>There are lots of system to create a website. I choose Hexo because it was created by Taiwanese.
-Rather than Jekyll which created by Ruby, Hexo was developed by Node.js and it seems faster than Jekyll.</p>
-<h2 id="Requirement"><a href="#Requirement" class="headerlink" title="Requirement"></a>Requirement</h2><p>You should install Git and Node.js at first.</p>
-<p><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> </p>
-<h2 id="Step"><a href="#Step" class="headerlink" title="Step"></a>Step</h2><ol>
-<li><p>install Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
-</li>
-<li><p>create directory</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
-</li>
-<li><p>install hexo package</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-index --save</div><div class="line">npm install hexo-generator-archive --save</div><div class="line">npm install hexo-generator-category --save</div><div class="line">npm install hexo-generator-tag --save</div><div class="line">npm install hexo-server --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">npm install hexo-deployer-heroku --save</div><div class="line">npm install hexo-deployer-rsync --save</div><div class="line">npm install hexo-deployer-openshift --save</div><div class="line">npm install hexo-renderer-ejs --save</div><div class="line">npm install hexo-renderer-marked@0.2 --save</div><div class="line">npm install hexo-renderer-stylus@0.2 --save</div><div class="line">npm install hexo-generator-feed@1 --save</div><div class="line">npm install hexo-generator-sitemap@1 --save</div><div class="line">npm install hexo-generator-feed</div></pre></td></tr></table></figure>
-</li>
-<li><p>Set Github account</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.email <span class="string">"EMAIL"</span></div><div class="line">git config --global user.name <span class="string">"NAME"</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>Create SSH key to deploy</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"EMAIL"</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;輸入密碼&gt;</div><div class="line">Enter same passphrase again:&lt;再次輸入密碼&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>Set SSH key on Github
-Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys</p>
-</li>
-<li><p>Open _config.yml</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">Site</div><div class="line">title: /標題(會顯示在網頁標題與頁首)/</div><div class="line">subtitle: /子標題(顯示在頁首)/</div><div class="line">description: /內容描述(給搜尋引擎看的)/</div><div class="line">author: /作者(顯示在頁尾)/</div><div class="line">language: /網站預設語言(台灣:zh-tw)/</div><div class="line">timezone: /時區(預設使用你電腦的時區)/</div><div class="line"></div><div class="line">URL</div><div class="line">url: /網站的網域位址/</div><div class="line">root: /網站根目錄/</div><div class="line">permalink: /文章目錄(預設使用 YYYY\MM\DD\文章名稱)/</div><div class="line"></div><div class="line">Extensions</div><div class="line">theme: /網站的佈景主題/</div><div class="line">       (可以到"https://hexo.io/themes/"下載喜歡的佈景放置到 theme 目錄裡)</div><div class="line"></div><div class="line">Deployment</div><div class="line">deploy:</div><div class="line">    type: /發佈型態/ 例如(git、heroku、rsync、openshift、ftpsync)</div><div class="line">    repository: /部署位置/ 例如(git@github.com:帳號/REPO名.git)</div><div class="line">    branch: /分支/ 例如(master、gh-pages)</div><div class="line">    message: /部署訊息/</div><div class="line"></div><div class="line">marked:</div><div class="line">    gfm: true</div><div class="line">    pedantic: false</div><div class="line">    sanitize: false</div><div class="line">    tables: false</div><div class="line">    breaks: false</div><div class="line">    smartLists: false</div><div class="line">    smartypants: false</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g  <span class="comment"># 產生 blog</span></div><div class="line">hexo s  <span class="comment"># 讓 blog 可以在 local 端檢視</span></div></pre></td></tr></table></figure>
-<h2 id="Create-new-post"><a href="#Create-new-post" class="headerlink" title="Create new post"></a>Create new post</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="built_in">type</span> title</div></pre></td></tr></table></figure>
-<p>type: post page draft</p>
-<h2 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h2><ol>
-<li>clone to /themes</li>
-<li>edit _config.yml -&gt; theme: ???</li>
-</ol>
-<p>Reference</p>
-<p>Thanks for everyone who teaches Hexo and help me to build this blog.</p>
-<p><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">https://xuanwo.org/2015/03/26/hexo-intor/</a></p>
-<p><a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/" target="_blank" rel="external">https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/</a></p>
-<p><a href="http://tiktoking.github.io/2016/01/26/hexo/" target="_blank" rel="external">http://tiktoking.github.io/2016/01/26/hexo/</a></p>
-<p><a href="http://a0tim.github.io/2015/10/hexo-1/" target="_blank" rel="external">http://a0tim.github.io/2015/10/hexo-1/</a></p>
+            <h1 id="Pin-post-test"><a href="#Pin-post-test" class="headerlink" title="Pin post test"></a>Pin post test</h1><p><img src="https://deresute.me/601304466/large" alt="pic"></p>
 
         
         </div>
@@ -317,7 +269,7 @@ Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/09/18/test/" data-id="cittguams0005qkfb8303dmej" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/10/02/Pin/" data-id="cittguamf0001qkfbsdmgyr99" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -385,7 +337,7 @@ Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys
 
             
     
-        <a href="http://kentshih.github.io/2016/09/18/test/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2016/09/18/test/">Comments</a>
+        <a href="http://kentshih.github.io/2016/10/02/Pin/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2016/10/02/Pin/">Comments</a>
     
 
         </footer>
@@ -394,19 +346,19 @@ Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys
         
 <nav id="article-nav">
     
-        <a href="/2016/09/18/Markdown-syntax/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2016/10/02/test2/" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
-                    Markdown-syntax
+                    test2
                 
             </div>
         </a>
     
     
-        <a href="/2016/09/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2016/09/18/Markdown-syntax/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">Hello World</div>
+            <div class="article-nav-title">Markdown-syntax</div>
         </a>
     
 </nav>
@@ -599,9 +551,9 @@ Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://kentshih.github.io/2016/09/18/test/';
+            this.page.url = 'http://kentshih.github.io/2016/10/02/Pin/';
         
-        this.page.identifier = 'test';
+        this.page.identifier = 'Pin';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
