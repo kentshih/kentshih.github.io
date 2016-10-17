@@ -3,23 +3,21 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Markdown-syntax | Baby Steps</title>
+    <title>Hexo Build | Baby Steps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="To write passage in Hexo, it&amp;#39;s necessary to familar with markdown syntax.
-I will try what I learned in this post.">
+    <meta name="description" content="I will post what I learned in my blog.
+This article indicated how to build Hexo in Github.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown-syntax">
-<meta property="og:url" content="http://kentshih.github.io/2016/09/18/Markdown-syntax/index.html">
+<meta property="og:title" content="Hexo Build">
+<meta property="og:url" content="http://kentshih.github.io/2016/09/18/Hexo Build/index.html">
 <meta property="og:site_name" content="Baby Steps">
-<meta property="og:description" content="To write passage in Hexo, it&amp;#39;s necessary to familar with markdown syntax.
-I will try what I learned in this post.">
-<meta property="og:image" content="http://kentshih.github.io/path/to/img.jpg">
-<meta property="og:updated_time" content="2016-10-17T05:47:23.000Z">
+<meta property="og:description" content="I will post what I learned in my blog.
+This article indicated how to build Hexo in Github.">
+<meta property="og:updated_time" content="2016-10-17T05:50:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown-syntax">
-<meta name="twitter:description" content="To write passage in Hexo, it&amp;#39;s necessary to familar with markdown syntax.
-I will try what I learned in this post.">
-<meta name="twitter:image" content="http://kentshih.github.io/path/to/img.jpg">
+<meta name="twitter:title" content="Hexo Build">
+<meta name="twitter:description" content="I will post what I learned in my blog.
+This article indicated how to build Hexo in Github.">
     
 
     
@@ -223,7 +221,7 @@ ga('send', 'pageview');
 </aside>
 
             
-            <section id="main"><article id="post-Markdown-syntax" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main"><article id="post-Hexo Build" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -231,7 +229,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-            Markdown-syntax
+            Hexo Build
         </h1>
     
 
@@ -240,8 +238,8 @@ ga('send', 'pageview');
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/18/Markdown-syntax/">
-            <time datetime="2016-09-19T03:53:20.000Z" itemprop="datePublished">2016-09-18</time>
+        <a href="/2016/09/18/Hexo Build/">
+            <time datetime="2016-09-18T21:21:28.000Z" itemprop="datePublished">2016-09-18</time>
         </a>
     </div>
 
@@ -261,67 +259,49 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            <p>To write passage in Hexo, it&#39;s necessary to familar with markdown syntax.
-I will try what I learned in this post.</p>
+            <p>I will post what I learned in my blog.
+This article indicated how to build Hexo in Github.</p>
 <a id="more"></a>
-<ol>
-<li>pound sign (#) means title (ATX style)</li>
-</ol>
-<h1 id="one-title"><a href="#one-title" class="headerlink" title="one title"></a>one title</h1><h2 id="two-title"><a href="#two-title" class="headerlink" title="two title"></a>two title</h2><ol>
-<li>star sign, plus sign, minus sign means list</li>
-<li>test1</li>
-<li>test2</li>
-<li><p>test3</p>
+<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><p>There are lots of system to create a website. I choose Hexo because it was created by Taiwanese.
+Rather than Jekyll which created by Ruby, Hexo was developed by Node.js and it seems faster than Jekyll.</p>
+<h2 id="Requirement"><a href="#Requirement" class="headerlink" title="Requirement"></a>Requirement</h2><p>You should install Git and Node.js at first.</p>
+<p><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a> </p>
+<h2 id="Step"><a href="#Step" class="headerlink" title="Step"></a>Step</h2><ol>
+<li><p>install Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure>
 </li>
-<li><p>setext style title use equal (=) and minus (-)</p>
-<h1 id="one-title-1"><a href="#one-title-1" class="headerlink" title="one title"></a>one title</h1><p>two title</p>
+<li><p>create directory</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
 </li>
-</ol>
-<hr>
-<ol>
-<li>introduction (&gt;)</li>
-</ol>
-<blockquote>
-<p>hihihi</p>
-</blockquote>
-<ol>
-<li><p>code block (tab or four blank)
-Test
- It&#39;s code.
- hi</p>
+<li><p>install hexo package</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">npm install hexo-generator-index --save</div><div class="line">npm install hexo-generator-archive --save</div><div class="line">npm install hexo-generator-category --save</div><div class="line">npm install hexo-generator-tag --save</div><div class="line">npm install hexo-server --save</div><div class="line">npm install hexo-deployer-git --save</div><div class="line">npm install hexo-deployer-heroku --save</div><div class="line">npm install hexo-deployer-rsync --save</div><div class="line">npm install hexo-deployer-openshift --save</div><div class="line">npm install hexo-renderer-ejs --save</div><div class="line">npm install hexo-renderer-marked@0.2 --save</div><div class="line">npm install hexo-renderer-stylus@0.2 --save</div><div class="line">npm install hexo-generator-feed@1 --save</div><div class="line">npm install hexo-generator-sitemap@1 --save</div><div class="line">npm install hexo-generator-feed</div></pre></td></tr></table></figure>
 </li>
-<li><p>Seperate line</p>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
+<li><p>Set Github account</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.email <span class="string">"EMAIL"</span></div><div class="line">git config --global user.name <span class="string">"NAME"</span></div></pre></td></tr></table></figure>
 </li>
-<li><p>Link
- <a href="www.link.com">Link</a>
-or</p>
+<li><p>Create SSH key to deploy</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"EMAIL"</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):&lt;輸入密碼&gt;</div><div class="line">Enter same passphrase again:&lt;再次輸入密碼&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Set SSH key on Github
+Github -&gt; account setting -&gt; SSH Public Keys -&gt; add another public keys</p>
+</li>
+<li><p>Open _config.yml</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">Site</div><div class="line">title: /標題(會顯示在網頁標題與頁首)/</div><div class="line">subtitle: /子標題(顯示在頁首)/</div><div class="line">description: /內容描述(給搜尋引擎看的)/</div><div class="line">author: /作者(顯示在頁尾)/</div><div class="line">language: /網站預設語言(台灣:zh-tw)/</div><div class="line">timezone: /時區(預設使用你電腦的時區)/</div><div class="line"></div><div class="line">URL</div><div class="line">url: /網站的網域位址/</div><div class="line">root: /網站根目錄/</div><div class="line">permalink: /文章目錄(預設使用 YYYY\MM\DD\文章名稱)/</div><div class="line"></div><div class="line">Extensions</div><div class="line">theme: /網站的佈景主題/</div><div class="line">       (可以到"https://hexo.io/themes/"下載喜歡的佈景放置到 theme 目錄裡)</div><div class="line"></div><div class="line">Deployment</div><div class="line">deploy:</div><div class="line">    type: /發佈型態/ 例如(git、heroku、rsync、openshift、ftpsync)</div><div class="line">    repository: /部署位置/ 例如(git@github.com:帳號/REPO名.git)</div><div class="line">    branch: /分支/ 例如(master、gh-pages)</div><div class="line">    message: /部署訊息/</div><div class="line"></div><div class="line">marked:</div><div class="line">    gfm: true</div><div class="line">    pedantic: false</div><div class="line">    sanitize: false</div><div class="line">    tables: false</div><div class="line">    breaks: false</div><div class="line">    smartLists: false</div><div class="line">    smartypants: false</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<pre><code>[foo]: http://example.com/  &quot;Optional Title Here&quot;
-</code></pre><ol>
-<li><p>Emphasis
- <em>single asterisks</em></p>
-<p> <em>single underscores</em></p>
-</li>
-<li><p>Code
- <code>printf()</code></p>
-</li>
-<li><p>Picture
-<img src="/path/to/img.jpg" alt="Alt text" title="Optional title"></p>
-</li>
-<li><p>automatic link
-<a href="http://example.com/" target="_blank" rel="external">http://example.com/</a></p>
-</li>
-<li><p>jump character
-\back slash\</p>
-</li>
+<h2 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g  <span class="comment"># 產生 blog</span></div><div class="line">hexo s  <span class="comment"># 讓 blog 可以在 local 端檢視</span></div></pre></td></tr></table></figure>
+<h2 id="Create-new-post"><a href="#Create-new-post" class="headerlink" title="Create new post"></a>Create new post</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="built_in">type</span> title</div></pre></td></tr></table></figure>
+<p>type: post page draft</p>
+<h2 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h2><ol>
+<li>clone to /themes</li>
+<li>edit _config.yml -&gt; theme: ???</li>
 </ol>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://markdown.tw/" target="_blank" rel="external">http://markdown.tw/</a></p>
+<p>Reference</p>
+<p>Thanks for everyone who teaches Hexo and help me to build this blog.</p>
+<p><a href="https://xuanwo.org/2015/03/26/hexo-intor/" target="_blank" rel="external">https://xuanwo.org/2015/03/26/hexo-intor/</a></p>
+<p><a href="https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/" target="_blank" rel="external">https://wwssllabcd.github.io/blog/2014/12/22/how-to-install-hexo/</a></p>
+<p><a href="http://tiktoking.github.io/2016/01/26/hexo/" target="_blank" rel="external">http://tiktoking.github.io/2016/01/26/hexo/</a></p>
+<p><a href="http://a0tim.github.io/2015/10/hexo-1/" target="_blank" rel="external">http://a0tim.github.io/2015/10/hexo-1/</a></p>
 
         
         </div>
@@ -332,7 +312,7 @@ or</p>
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/" data-id="ciudn7en300034ddtn245mevh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/09/18/Hexo Build/" data-id="ciudn7emr00004ddtpmpzxl2g" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -400,7 +380,7 @@ or</p>
 
             
     
-        <a href="http://kentshih.github.io/2016/09/18/Markdown-syntax/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/">Comments</a>
+        <a href="http://kentshih.github.io/2016/09/18/Hexo Build/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2016/09/18/Hexo Build/">Comments</a>
     
 
         </footer>
@@ -409,19 +389,19 @@ or</p>
         
 <nav id="article-nav">
     
-        <a href="/2016/10/02/Pin/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/2016/09/18/Markdown-syntax/" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
-                    Pin
+                    Markdown-syntax
                 
             </div>
         </a>
     
     
-        <a href="/2016/09/18/Hexo Build/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2016/09/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
             <strong class="article-nav-caption">Older</strong>
-            <div class="article-nav-title">Hexo Build</div>
+            <div class="article-nav-title">Hello World</div>
         </a>
     
 </nav>
@@ -595,9 +575,9 @@ or</p>
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://kentshih.github.io/2016/09/18/Markdown-syntax/';
+            this.page.url = 'http://kentshih.github.io/2016/09/18/Hexo Build/';
         
-        this.page.identifier = 'Markdown-syntax';
+        this.page.identifier = 'Hexo Build';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
