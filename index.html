@@ -165,11 +165,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                5
+                7
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                2
+                3
                 <span>tags</span>
             </div>
         </div>
@@ -268,7 +268,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/10/02/about/" data-id="cjcirvit40004sl9xf355857w" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/10/02/about/" data-id="cjifj99p30000nb9xklkmr0c6" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -346,6 +346,273 @@ ga('send', 'pageview');
 
 
 
+    <article id="post-hadoop" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/06/14/hadoop/">hadoop</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/06/14/hadoop/">
+            <time datetime="2018-06-14T21:30:54.000Z" itemprop="datePublished">2018-06-14</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <ol>
+<li><p>homebrew
+ $ ruby -e &quot;$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)&quot;</p>
+</li>
+<li><p>homebrew cask: Interface 終端？
+ $ brew install caskroom/cask/brew-cask
+ 但現在不需要了？</p>
+</li>
+<li><p>Java</p>
+</li>
+<li>SSH</li>
+<li>安裝 Hadoop
+ brew install hadoop</li>
+<li></li>
+</ol>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://kentshih.github.io/2018/06/14/hadoop/" data-id="cjifj99pe0003nb9xkpe81o35" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://kentshih.github.io/2018/06/14/hadoop/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2018/06/14/hadoop/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-white-album" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/03/28/white-album/">white_album</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/03/28/white-album/">
+            <time datetime="2018-03-28T22:57:32.000Z" itemprop="datePublished">2018-03-28</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/game-anime/">game, anime</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>雖然是好幾年前的作品了但時至今日，我還是沒玩完遊戲Orz</p>
+<p>在序章時完全沒有可以選擇的選項，與其說是遊戲不如像是有聲書一樣。
+跟著主角推進劇情，為了夢想努力，為各種課題煩惱。</p>
+<p>胃痛程度無與倫比，討論程度之高甚至媲美紅樓夢的紅學而被人們以白學稱之。</p>
+<p>簡單的三角關係能寫得如此糾結真是ㄍㄢ你丸戶。看完作品後人們總是想抓戰犯（？ 對我來說這根本不是是非對錯的問題啊，有時候明明互相為對方著想卻會走到死胡同。不只人生連遊戲都有這種厭世的內容我還是想ㄍㄢ妳丸戶。</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://kentshih.github.io/2018/03/28/white-album/" data-id="cjifj99pp0009nb9x8yu2e8bq" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://kentshih.github.io/2018/03/28/white-album/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://kentshih.github.io/2018/03/28/white-album/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-test3" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -354,7 +621,7 @@ ga('send', 'pageview');
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2018/01/16/test3/">test3</a>
+            <a class="article-title" href="/2018/01/16/test3/">Advanced Python</a>
         </h1>
     
 
@@ -379,7 +646,19 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
         
             
-            
+            <p>args, kwargs
+args: list of arg</p>
+<p>def test_var_args(f_arg, <em>argv):
+    print(&quot;first normal arg:&quot;, f_arg)
+    for arg in argv:
+        print(&quot;another arg through </em>argv:&quot;, arg)</p>
+<p>f_arg : first arg
+argv: 2,3,4... list</p>
+<p>kwargs : pass parameter!
+unsafe?</p>
+<p>fargs?</p>
+<p>usage: api call!</p>
+
         
         </div>
         <footer class="article-footer">
@@ -389,7 +668,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2018/01/16/test3/" data-id="cjcirvisu0001sl9xyogzp2ps" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2018/01/16/test3/" data-id="cjifj99pn0008nb9xy8a3gmzb" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -518,7 +797,7 @@ I will try what I learned in this post.</p></p>
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/" data-id="cjcirvit50005sl9x9cmj33r1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/09/18/Markdown-syntax/" data-id="cjifj99p80001nb9xc1cx3imw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -647,7 +926,7 @@ This article indicated how to build Hexo in Github.</p></p>
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/09/18/Hexo Build/" data-id="cjcirvisp0000sl9x0yds9uvd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/09/18/Hexo Build/" data-id="cjifj99pl0005nb9xgt50pbnp" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -770,7 +1049,7 @@ This article indicated how to build Hexo in Github.</p></p>
 
 </div>
 
-    <a data-url="http://kentshih.github.io/2016/09/17/hello-world/" data-id="cjcirvit10003sl9xqhdhlr0v" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://kentshih.github.io/2016/09/17/hello-world/" data-id="cjifj99pj0004nb9xykv6k9gh" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -860,6 +1139,44 @@ This article indicated how to build Hexo in Github.</p></p>
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2018/06/14/hadoop/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/06/14/hadoop/" class="title">hadoop</a></p>
+                            <p class="item-date"><time datetime="2018-06-14T21:30:54.000Z" itemprop="datePublished">2018-06-14</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/03/28/white-album/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/03/28/white-album/" class="title">white_album</a></p>
+                            <p class="item-date"><time datetime="2018-03-28T22:57:32.000Z" itemprop="datePublished">2018-03-28</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2018/01/16/test3/" class="thumbnail">
     
     
@@ -871,7 +1188,7 @@ This article indicated how to build Hexo in Github.</p></p>
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2018/01/16/test3/" class="title">test3</a></p>
+                            <p class="item-title"><a href="/2018/01/16/test3/" class="title">Advanced Python</a></p>
                             <p class="item-date"><time datetime="2018-01-17T07:54:55.000Z" itemprop="datePublished">2018-01-16</time></p>
                         </div>
                     </li>
@@ -914,44 +1231,6 @@ This article indicated how to build Hexo in Github.</p></p>
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2016/09/18/Hexo Build/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2016/09/18/Hexo Build/" class="title">Hexo Build</a></p>
-                            <p class="item-date"><time datetime="2016-09-18T21:21:28.000Z" itemprop="datePublished">2016-09-18</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2016/09/17/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2016/09/17/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2016-09-18T03:19:16.000Z" itemprop="datePublished">2016-09-17</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -963,7 +1242,7 @@ This article indicated how to build Hexo in Github.</p></p>
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a><span class="archive-list-count">3</span></li></ul>
         </div>
     </div>
 
@@ -972,7 +1251,7 @@ This article indicated how to build Hexo in Github.</p></p>
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/">about</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/about/">about</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/game-anime/">game, anime</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -981,7 +1260,7 @@ This article indicated how to build Hexo in Github.</p></p>
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/about/" style="font-size: 10px;">about</a>
+            <a href="/tags/Hexo/" style="font-size: 20px;">Hexo</a> <a href="/tags/about/" style="font-size: 10px;">about</a> <a href="/tags/game-anime/" style="font-size: 10px;">game, anime</a>
         </div>
     </div>
 
